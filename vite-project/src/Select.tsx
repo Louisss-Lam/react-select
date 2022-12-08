@@ -60,8 +60,8 @@ export function Select({ multiple, value, onChange, options }: SelectProps) {
         >
             <span className={styles.value}>{multiple ? value.map(v => (
                 <button key={v.value} onClick={e => {
-                    e.stopPropagation()
-                    selectOption(v)
+                    e.stopPropagation();
+                    selectOption(v);
                 }}
                 className={styles["option-badge"]}
                 >
